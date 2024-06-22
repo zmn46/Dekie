@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Kiebot</title>
+    <link rel="shortcut icon" href="https://www.kiebot.com/wp-content/uploads/2021/01/favicon-01-1.png">
+    <link href='https://fonts.googleapis.com/css?family=Jost' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+     .container {
+            display: grid;
+            margin: -8px;
+        }
+     nav {
+            height: 60px;
+            background-color: #2574A9;
+            position: sticky ;
+            top: 0;
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns:1fr;
+            z-index: 10;
+            box-shadow: 0px 2px 1px #2275ac;
+           
+        }
+            
+        .logo-image {
+            width: 192px;
+            height: 44.2px;
+            padding-top: 8px;
+            padding-inline-start: 200px;
+        }
+    .sidebar {
+            padding-top: 20px;
+        }
+    .logo {
+        object-fit: contain;
+        grid-column-start: 1;
+        grid-column-end: 9;
+        
+    }
+    .link {
+        color: whitesmoke;
+        text-decoration: none;
+     
+        
+    }
+    .link:hover {
+        color: rgb(228, 71, 71);
+    }
+    .baner {
+        background-image: url("images/service-01.png");
+        background-size: 100%;
+        height: 430px;
+        width: 100%;
+        background-repeat: no-repeat;
+
+      
+    }
+    .logo-text {
+      position:relative;
+      font-size: 55px;
+      top: 25%;
+      left: 13%;
+      width: 300px;
+      color: #ffffff;
+
+    }
+    main {
+        height: 1fr;
+        display: grid;
+        
+        
+    }
+    .content-text {
+        width: 1200px;
+        height: 450px;
+        justify-self: center;
+    }
+    .content-head {
+        width: 300px;
+        font-size: 30px;
+        position:relative;
+        top: 60px;
+        left: 4px;
+    }
+    .contant-para {
+        width: 675px;
+        text-align: left;
+        position: relative;
+        top: 60px;
+    }
+    .main-box {
+        width: 1200px;
+        min-height: 1000px;
+        /* border: 2px solid black; */
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        justify-self: center;
+        
+        
+    }
+    .box-link {
+        width: 550px;
+        height: max-content;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.177);
+        margin-top: 10px;
+        text-decoration: none;
+        border-radius: 1%;
+        margin: 10px;
+        transition: all 1s;
+       
+    }
+    .box-link:hover {
+         transform: translateY(-10px);
+         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+
+             
+    }
+        
+    
+    .box-image {
+        object-fit: contain;
+        width: 550px;
+        border-radius: 1%;
+        
+    }
+    
+    h2 {
+        text-align: center;
+        color: #12304A;
+        font-weight: 500;
+    }
+    p {
+        text-align: center;
+        padding: 30px;
+        font-size: 18px;
+        color: rgb(88, 119, 144);
+    }
+    .main-conclusion {
+        width: 1200px;
+        min-height: 545px;
+        justify-self: center;
+        display: grid;
+        justify-content: center;
+        grid-auto-flow: column;
+    }
+    .conclusion-main-head {
+        font-size: 36px;
+        position: relative;
+        top: 175px;
+        color: rgb(18, 48, 74);
+    }
+    .conclusion-box {
+        width: 360px;
+        min-height:50px;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        text-align: center;
+
+    }
+    .conclusion-border {
+        border-left: 1px solid rgb(219, 222, 224);
+        border-right:1px solid rgb(219, 222, 224) ;
+    }
+    .conclusion-heading {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        color: rgb(18, 48, 74);
+    }
+    .conclusion-para {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: rgb(88, 119, 144);
+        
+    }
+    footer {
+        height: 360px;
+        width: 100%;
+        background-color: #2574A9;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+
+    }
+    .footer-contant {
+        width: 270.5px;
+        height: 200px;
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    h4 {
+       font-size: 18px;
+       color: #ffffff;
+       font-weight: 500;
+       margin-bottom: 45px;
+    }
+    .footer-link {
+        margin-bottom: 5px;
+        text-decoration: none;
+        color: #ffffff;
+        opacity: .7;
+        width: max-content;
+        border-bottom: 1px solid #2574A9;
+
+    }
+    .footer-link:hover {
+       border-bottom:1px solid #ffffffc3;
+    }
+    .icon {
+        display: flex;
+        flex-direction: row;
+        margin-inline-start: -13px;
+    }
+    .fa {
+        padding: 23px;
+        font-size: 19px;
+        width: 14px;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 12px;
+        padding-inline-start: 21px;
+        padding-bottom: 3px;
+        border-radius: 3px;
+
+    }
+    .fa:hover {
+        background: #55acf4;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: #3B8ACA;
+        color: white;
+        
+    }
+    .fa-instagram {
+        background:#464646 ;
+        color: white;
+    }
+    .fa-youtube {
+        background: #cc181e;
+        color: white;
+    }
+    .fa-linkedin {
+        background: #0077B5;
+        color: white;
+    }
+
+    .last {
+        width: 100%;
+        background-color: #2574A9;
+        border-top : 1px solid gray;
+        height : 30px;
+        padding-top : 20px;
+        padding-bottom : 10px;
+        text-indent : 200px;
+       
+    }
+    .last-text {
+        font-size: 12px;
+        letter-spacing: .5px;
+        text-indent: 220px;
+        color: whitesmoke;
+        width: 100%;
+        opacity: .7;
+    }
+        
+    </style>
+
+
+
+
+
+</head>
+<body style="font-family:jost, sans-serif";>
+    <div class="container">
+      <nav>
+        <div class="logo"><img src="images/kiebot-logo-200x50-png-01.png" alt="logo image" class="logo-image"></div>
+        <div class="sidebar"><a href="" class="link" style="color:rgb(71, 178, 228);">Services</a></div>
+        <div class="sidebar"><a href="" class="link">Company</a></div>
+        <div class="sidebar"><a href="" class="link">Life @ Kiebot</a></div>
+        <div class="sidebar" style="padding-inline-start: 1pc;"><a href="" class="link">Careers</a></div>
+        <div class="sidebar"><a href="" class="link">Contact Us</a></div>
+        <div class="sidebar"><a href="" class="link">Blogs</a></div>
+      </nav> 
+      <div class="baner"><h1 class="logo-text">Services</h1></div>
+      <main>
+        <div class="content-text">
+            <h2 class="content-head">How to get started?</h2>
+            <p class="contant-para">Let’s be part of your new business ventures. We launch an enterprise platform and built a powerful user experience in less than three months. Be it a requirement for mobile or web application, contact us and we are here to help you.</p>
+        </div>
+       <div class="main-box">
+        <a href="https://www.kiebot.com/mobile-app-development/" class="box-link">
+            <img src="images/mobile-app-01.png" alt="image" class="box-image">
+            <h2>Mobile App Development</h2>
+            <p>Mobile apps generated $188.9 billion in revenue through app stores and in-app advertising in 2020. Moreover, enterprise mobility is estimated to be worth $510.39 billion by 2022. When companies are trying to take an edge of the trend, many of them don't know how to create an app successfully. Read more.</p>
+        </a>
+        <a href="https://www.kiebot.com/web-app-development/" class="box-link">
+            <img src="images/web-app-01.png" alt="image" class="box-image">
+            <h2>Web App Development</h2>
+            <p>Web app development has gained a large significance these days. Features like performance, security, etc. are at a threat due to external cyber interventions. When developing a web app, we have to deal with utmost care on these factors when compared to desktop applications. Read more.</p>
+        </a>
+        <a href="https://www.kiebot.com/customized-erp-ecommerce-development/" class="box-link">
+            <img src="images/Untitled-3-10.png" alt="image" class="box-image">
+            <h2>Customized ERP Ecommerce development</h2>
+            <p>Kiebot aids customized ERP Ecommerce development. Nowadays, businesses depend on enterprise resource planning (ERP) systems to streamline their operations, cut costs and grow their business. Read more.</p>
+        </a>
+        <a href="https://www.kiebot.com/website-designing/" class="box-link">
+            <img src="images/Untitled-3-04.png" alt="image" class="box-image">
+            <h2>Website Designing</h2>
+            <p>Nobody is going to mind your business if you don't have a website! There lies the importance of website development and if it's customized, that's an added advantage. Customized means the website is tailored to your business needs. Read more.</p>
+        </a>
+        <a href="https://www.kiebot.com/digital-marketing/" class="box-link">
+            <img src="images/Untitled-3-06.png" alt="image" class="box-image">
+            <h2>Digital Marketing</h2>
+            <p>Digital Marketing is a relevant marketing strategy employed these days by successful businesses. The main reasons the era is choosing digital marketing are affordability, mobile access, authority, influencer engagement, and print enhancement. Read more.</p>
+        </a>
+        <a href="https://www.kiebot.com/devops-engineering/" class="box-link">
+            <img src="images/devops-01.png" alt="image" class="box-image">
+            <h2>DevOps Engineering</h2>
+            <p>DevOps is a set of practices that combines software development and IT Operations. Development teams and IT operations teams can have different abilities and different purposes. Developers want to introduce new traits to an application, while operations teams want to safeguard the stability of an application once it is released. Read more.</p>
+        </a>   
+        <a href="https://www.kiebot.com/it-consulting/" class="box-link">
+            <img src="images/IT-support-01.png" alt="image" class="box-image">
+            <h2>IT Consulting</h2>
+            <p>Technology is a driving force behind every business and if you don't know to choose the best technology for your business, then the business will be in peril. Read more.</p>
+        </a>
+        <div class="box-link" style="box-shadow: none;"></div>
+       </div>
+       <h2 class="conclusion-main-head">Got a project in your mind?</h2>
+       <div class="main-conclusion">
+        
+        <div class="conclusion-box">
+            <h4 class="conclusion-heading">Contact Us</h4>
+            <p class="conclusion-para">Let’s be part of your new business ventures. Be it a requirement for mobile or web application, contact us and we are here to help you.</p>
+        </div>
+        <div class="conclusion-box conclusion-border">
+            <h4 class="conclusion-heading">Organise a meeting</h4>
+            <p class="conclusion-para">We’ll set up a meeting to discuss your idea and needs. Get a chance to learn a little more about our team.</p>
+        </div>
+        <div class="conclusion-box">
+            <h4 class="conclusion-heading">Get a quote</h4>
+            <p class="conclusion-para">We focus on providing the best possible solution for your business requirements that fits your budget.</p>
+            
+        </div>
+       </div>
+      </main>
+      <footer>
+
+
+
+        <div class="footer-contant">
+            <h4>Company and team</h4>
+            <a href="" class="footer-link">About Us</a>
+            <a href="" class="footer-link" style="padding-top: 14px;">Blogs</a>
+        </div>
+        <div class="footer-contant">
+            <h4>Help and support</h4>
+            <a href="" class="footer-link">Contact us</a>
+        </div>
+        <div class="footer-contant">
+            <h4>Learn more</h4>
+            <a href="" class="footer-link">Privacy Policy</a>
+        </div>
+        <div class="footer-contant">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <a href="https://www.facebook.com/kiebotlearningsolutions" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FKiebotSolutions" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/kiebotlearningsolutions/" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://www.youtube.com/channel/UC8KG6-noJLoIbrYyeaAT4Bg" class="fa fa-youtube" target="_blank"></a>
+                <a href="https://in.linkedin.com/company/kiebotsolutions" class="fa fa-linkedin" target="_blank"></a>
+            </div>
+
+
+
+
+           
+        </div>
+      </footer>
+      <div class="last">
+      <span class="last-text"> © Copyright 2021 Kiebot. All Rights Reserved</span>
+      </div>
+    </div>
+</body>
+</html>
